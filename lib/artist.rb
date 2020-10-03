@@ -12,7 +12,6 @@ class Artist
   end
 
   def songs
-    # binding.pry
     Song.all.select {|song| song.artist == self}
   end
 
@@ -22,7 +21,6 @@ class Artist
   end
 
   def self.song_count
-    # binding.pry
     Song.all.count
   end
 
